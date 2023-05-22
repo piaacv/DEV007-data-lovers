@@ -1,0 +1,56 @@
+li{
+    display: inline;
+    border-style: solid;
+    border-color: #550303;
+    margin-left: 2em;
+    background-color: whitesmoke;
+    border-radius: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #550303;
+    border-style:solid;
+    padding: 0.2em;
+    
+}
+
+nav{
+    display:inline-flex;
+    /*continuar editando estilo menúnav*/
+    
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  body{
+    background-color: #0F2E5C;
+  }
+
+.buttonSearch{
+    border-style: solid;
+    border-color: #550303;
+    background-color: whitesmoke;
+    border-radius: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #550303;
+    border-style:solid;
+    padding: 0.2em;
+    font-size: large;
+    margin-left: 39%;
+
+}
+
+.containerBody{
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+
+footer{
+    color: whitesmoke;
+}
