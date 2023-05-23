@@ -2,30 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="menu">
-      <img src="images/sol.png">
-      <!-- se pone en horizontal con css\-->  
-      <ul> 
-        <li> Home </li>
-        <li> Gallery </li>
-        <li> Quick lecture </li>
-      </ul>
+    <header>
 
-      <form>
-        <input type="search" class="searchOnMenu" name="q" placeholder="Search card">
-        <input type="submit" value="Go!">
-      </form>
-    </nav>
-    <div id="banner">
-      <img src="images/astrología.png">
+      <img src="images/tarotlogo.png" class="tarot" width="50px" height="50px">
+      <ul > 
+
+        <button class="header_buttons"> Home </button>
+        <a href="search.html">
+        <button class="header_buttons"> Gallery </button>
+        </a>
+        <button class="header_buttons"> Quick lecture </button>
+    </ul>
+
+
+    <form>
+
+        <input type="search" class="header_search" placeholder="Search card">
+        <input type="submit" class="header_search_go" value="Go!">
+
+    </form>
+    </header>
+
+
+
+    <div class="banner">
+      <img src="images/astrología.png" class="imagesBanner">
         <button class="buttonSearch" type="button">Find out more</button>
     </div>
-    <div id="">
-      <img src="images/sol.png">
+    <div class="sectionLogo">
+      <img src="images/tarotlogo.png">
     </div>
     <div class="containerBody">
       <div class="card">
@@ -34,8 +44,8 @@
         </figure>
         <div class="contentCard">
           <h3>¿Did you know?</h3>
-          <p>No se sabe con exactitud quien fusionó los Arcanos Mayores con los Menores, pero se cree que surgió de la cultura gitana.</p>
-          <a href="https://es.wikipedia.org/wiki/Tarot_(adivinaci%C3%B3n)">Read more</a>
+          <p class="descriptionContentCard">It's not known exactly who merged the Major Arcana with the Minors, but it is believed that it arose from the gypsy culture.</p>
+          <a href="https://es.wikipedia.org/wiki/Tarot_(adivinaci%C3%B3n)" class="linkEachContentCard" target="_blank">Read more</a>
           </div>
       </div>
       <div class="card">
@@ -44,8 +54,8 @@
         </figure>
         <div class="contentCard">
           <h3>The meaning</h3>
-          <p>No se sabe con exactitud quien fusionó los Arcanos Mayores con los Menores, pero se cree que surgió de la cultura gitana.</p>
-          <a href="https://www.monografias.com/trabajos34/curso-tarot/curso-tarot">Read more</a>
+          <p class="descriptionContentCard">Reading tarot cards can help us delve into our subconscious, since the cards are the mirror of our soul.</p>
+          <a href="https://www.monografias.com/trabajos34/curso-tarot/curso-tarot" class="linkEachContentCard" target="_blank">Read more</a>
           </div>
       </div>
       <div class="card">
@@ -54,22 +64,21 @@
         </figure>
         <div class="contentCard">
           <h3>Learn how to read</h3>
-          <p>No se sabe con exactitud quien fusionó los Arcanos Mayores con los Menores, pero se cree que surgió de la cultura gitana.</p>
-          <a href="https://www.lanacion.com.ar/horoscopo/como-leer-las-cartas-del-tarot-guia-simplificada-nid07102022/#:~:text=El%20tarot%20es%20una%20disciplina,a%20ciertas%20preguntas%20del%20consultante.">Read more</a>
+          <p class="descriptionContentCard">An easy way to deal the cards is three cards representing the past, present, and future from right to left.</p>
+          <a href="https://www.lanacion.com.ar/horoscopo/como-leer-las-cartas-del-tarot-guia-simplificada-nid07102022/#:~:text=El%20tarot%20es%20una%20disciplina,a%20ciertas%20preguntas%20del%20consultante." class="linkEachContentCard" target="_blank">Read more</a>
           </div>
       </div>
     </div>
 
-    <div id="">
-      <img src="images/sol.png">
+    <div class="sectionLogo">
+      <img src="images/tarotlogo.png">
     </div>
 
-    <div id="banner">
-      <img src="images/astrología.png">
-        <button class="buttonSearch" type="button">Complete gallery</button>
-    </div>
-    
-    <div id="root"></div>
+    <a href="search.html">
+      <div class="gallery">
+        <h2 class="titleGallery">All cards</h2>
+      </div>
+    </a>
 
     <footer><p>Copyright 2023©</p></footer>
     <script src="main.js" type="module"></script>
