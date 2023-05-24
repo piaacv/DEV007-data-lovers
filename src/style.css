@@ -1,14 +1,17 @@
 header{
     height: 5rem;
     display: inline-flex;
+    padding: auto;
     width: auto;
 }
 .tarot{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin-top: .5rem;
     margin-bottom: .5rem;
     display: flex;
+    margin-left: 1rem;
+    margin-right: 4rem;
 
 }
 .header_buttons{
@@ -18,24 +21,29 @@ header{
    background-color: whitesmoke;
    border-radius: 1rem;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: medium;
    color: #550303;
-   border-width: 2px;
+   border-width: 3px;
 width: max-content;
 margin-right: 2rem;
 padding: 5px 15px 5px 15px;
+width: 15rem;
+height: 2.5rem;
 }
 .header_buttons:hover{
     color: goldenrod;
 }
 header .header_search{
     display:inline-block;
-    width: 300px;
-    height: 20px;
+    width: 350px;
+    height: 3em;
     border: none;
     outline: none;
     margin-top: 1rem;
     margin-left: 15rem;
     border-radius: 2rem;
+    font-size: medium;
+    padding-left: 15px;
 }
 header .header_search:hover{
     box-shadow: 0 1px 7px 0px #120230;
@@ -56,31 +64,63 @@ header .header_search_go:hover{
 }
 
 
-img {
+.imageBanner {
     width: 100%;
     height: 300px;
     object-fit: cover;
     object-position: bottom;
+    background-image: url(images/astrología.png);
+
   }
 
   body{
     background-color: #0F2E5C;
+    width: auto;
   }
 
+.banner{
+    text-align: center;
+    display: flex;
+    content: center;
+
+    
+}
 .buttonSearch{
     border-style: solid;
     border-color: #550303;
     background-color: whitesmoke;
-    border-radius: 2em;
+    border-radius: 2rem;
+    border-width: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #550303;
     border-style:solid;
-    padding: 0.2em;
+    padding: .5rem 3rem .5rem 3rem;
     font-size: large;
-    margin-left: 39%;
+    object-position: row;
+    margin-top:center;
+    margin-top: 7rem;
+    
 
 }
 
+.sectionLogo{
+    display: flex;
+object-position: center;
+align-items: center;
+justify-content: center;
+margin-top: 2rem;
+margin-bottom: 2rem;
+
+}
+main .mainlogo{
+  width: 50px;
+  height: 50px;
+display: flex;
+object-position: center;
+align-items: center;
+justify-content: center;
+
+}
 .containerBody{
     color: whitesmoke;
     display: flex;
@@ -124,6 +164,7 @@ img {
     height:200px;
     width: 900px;
     background-image: url("images/all-cards.jpg");
+    display: flex;
     text-align: center;
     margin-left: 800px;
 }
