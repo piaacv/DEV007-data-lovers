@@ -191,3 +191,7 @@ footer{
 a{
     color:whitesmoke;
 }
+
+showAllCards{
+    display: flex;
+}
