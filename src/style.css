@@ -133,7 +133,7 @@ justify-content: center;
     margin-bottom: 50px;
 }
 .blog img{
-    width: 280px;
+    max-width: 280px;
     max-height: 350px;
 }
 
@@ -232,7 +232,7 @@ footer{
     box-shadow: #F7C9B4;
     
 }
-.main_filtrocontenido a {
+.main_filtrocontenido option {
     color: #F7C9B4;
     padding: 12px 16px;
     text-decoration: none;
