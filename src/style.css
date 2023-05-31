@@ -5,8 +5,8 @@ header{
     width: auto;
 }
 .tarot{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-top: .5rem;
     margin-bottom: .5rem;
     display: flex;
@@ -27,20 +27,20 @@ header{
 width: max-content;
 margin-right: 2rem;
 padding: 5px 15px 5px 15px;
-width: 15rem;
-height: 2.5rem;
+width: 7rem;
+height: 2rem;
 }
 .header_buttons:hover{
     color: goldenrod;
 }
 header .header_search{
     display:inline-block;
-    width: 350px;
-    height: 3em;
+    width: 300px;
+    height: 2rem;
     border: none;
     outline: none;
     margin-top: 1rem;
-    margin-left: 15rem;
+    margin-left: 5rem;
     border-radius: 2rem;
     font-size: medium;
     padding-left: 15px;
@@ -121,16 +121,20 @@ align-items: center;
 justify-content: center;
 
 }
-.containerBody{
+.blog{
     color: whitesmoke;
     display: flex;
-    max-width: 2000px;
+    width: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
     min-height:auto;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+.blog img{
+    width: 280px;
+    max-height: 350px;
 }
 
 .card{
@@ -139,9 +143,10 @@ justify-content: center;
     border-width: 5px;
     margin-left:50px;
     text-align: center;
+    justify-content: center;
     padding: 0px;
     border-radius: 5px;
-    width: 600px;
+    width: 350px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 20px;
     box-sizing: content-box;
@@ -160,13 +165,16 @@ justify-content: center;
     border-radius: 2px;
     padding: 4px;
 }
+.main_galleryimg{
+    display: flex;
+    justify-content: center;
+}
 .gallery{
     height:200px;
     width: 900px;
     background-image: url("images/all-cards.jpg");
     display: flex;
     text-align: center;
-    margin-left: 800px;
 }
 
 
@@ -178,20 +186,58 @@ justify-content: center;
     padding-top: 110px;
     padding-right: 30px;
 }
-
-a{
-    text-decoration: none;
+.main_galleryconjunto{
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
 
 footer{
     color: whitesmoke;
     text-align: center;
+    margin-top: 2rem;
 }
 
-a{
-    color:whitesmoke;
-}
-
-showAllCards{
+#showAllCards{
     display: flex;
+    columns:3;
+    flex-wrap:wrap;
 }
+.main_filtro{
+    border-style: solid;
+    border-color: #550303;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    border-width: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #550303;
+    border-style:solid;
+    padding: .5rem 3rem .5rem 3rem;
+    font-size: large;
+    object-position: center;
+    margin-top:center;
+    margin-top: 7rem;
+}
+
+.main_filtrodrop{
+    position: relative;
+    display: inline_block;
+}
+.main_filtrocontenido{
+    display: none;
+    position: inherit;
+    background-color: #0f2e5c5e;
+    min-width: 160px;
+    box-shadow: #F7C9B4;
+    
+}
+.main_filtrocontenido a {
+    color: #F7C9B4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.main_filtrodrop:hover .main_filtrocontenido {display: block;}
+
+
