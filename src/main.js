@@ -1,12 +1,10 @@
+import { arcadeMajorFilter, arcadeMinorFilter } from './data.js';
 import tarot from './data/tarot/tarot.js';
 
 
 const showCards = document.getElementById("showAllCards");
-const filer_nameaz= document.getElementById("filter_nameza")
-const filer_nameza= document.getElementById("filter_nameaz")
-const filer_acendente= document.getElementById("filter_acendente")
-const filter_decendente= document.getElementById("filter_decendente")
 const cards= tarot.cards;
+const filterButtonSelection = document.getElementById("filterbutton");
 
 console.log(cards)
 
@@ -15,10 +13,33 @@ cards.forEach(imageCards => {
     <div><img src="${imageCards.img}"></div>`
 })
 
-const filterbutton = document.getElementById(filterbutton)
-filterbutton.addEventListener ("click", () =>{
-    if (filterbutton === filer_nameza){
-        showCards.innerHTML
+  
+  
+  console.log(arcadeMajorFilter);
+
+  filterButtonSelection.addEventListener ("change", () =>{
+    const optionSelected = filterButtonSelection.value
+    let dataCard;
+    if (optionSelected === "Arcade minor"){
+        dataCard = arcadeMinorFilter
+        console.log(arcadeMinorFilter);
     }
-}
- )
+    dataCard.forEach(cardArcadeMinor =>{
+        cardArcadeMinor.innerHTML =""
+        cardArcadeMinor.innerHTML += `
+        <div><img src="${cardArcadeMinor.img}"></div>`
+    })
+})
+
+
+
+ /*function filtrar (data,propiedad){
+    return data.filter(tarotCards => {
+        return tarotCards.type === propiedad
+        })
+      }
+      
+      
+      console.log(filtrar(cards,"minor"));
+      console.log(filtrar(cards,"major"));
+      */

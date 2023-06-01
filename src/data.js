@@ -1,9 +1,11 @@
-// estas funciones son de ejemplo
+import tarot from './data/tarot/tarot.js';
+const cards= tarot.cards;
 
-export const example = () => {
-  return 'example';
-};
+export const arcadeMinorFilter = cards.filter(arcadeMinorCards => {
+  return arcadeMinorCards.type==="minor";
+});
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+export const arcadeMajorFilter = cards.filter(arcadeMajorCards => {
+  return arcadeMajorCards.type==="major";
+});
+
