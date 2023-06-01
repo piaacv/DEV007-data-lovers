@@ -8,28 +8,28 @@ const filterButtonSelection = document.getElementById("filterbutton");
 
 console.log(cards)
 
-cards.forEach(imageCards => {
-    showAllCards.innerHTML += `
+cards.forEach((imageCards) => {
+    showCards.innerHTML += `
     <div><img src="${imageCards.img}"></div>`
 })
 
   
   
-  console.log(arcadeMajorFilter);
+  /*console.log(arcadeMajorFilter);*/
 
   filterButtonSelection.addEventListener ("change", () =>{
     const optionSelected = filterButtonSelection.value
     let dataCard;
     if (optionSelected === "Arcade minor"){
-        dataCard = arcadeMinorFilter
+        dataCard = arcadeMinorFilter;
         console.log(arcadeMinorFilter);
     }
-    dataCard.forEach(cardArcadeMinor =>{
-        cardArcadeMinor.innerHTML =""
-        cardArcadeMinor.innerHTML += `
+    showCards.innerHTML = "";
+    dataCard.forEach((cardArcadeMinor) =>{
+        showCards.innerHTML += `
         <div><img src="${cardArcadeMinor.img}"></div>`
-    })
-})
+    });
+});
 
 
 
