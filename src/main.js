@@ -1,4 +1,4 @@
-import { arcadeMajorFilter, arcadeMinorFilter } from './data.js';
+import { arcadeMajorFilter, arcadeMinorFilter, sortBy } from './data.js';
 import tarot from './data/tarot/tarot.js';
 
 
@@ -13,33 +13,44 @@ cards.forEach((imageCards) => {
     <div><img src="${imageCards.img}"></div>`
 })
 
-  
-  
-  /*console.log(arcadeMajorFilter);*/
 
   filterButtonSelection.addEventListener ("change", () =>{
-    const optionSelected = filterButtonSelection.value
+    const optionSelected = filterButtonSelection.value;
     let dataCard;
     if (optionSelected === "Arcade minor"){
         dataCard = arcadeMinorFilter;
         console.log(arcadeMinorFilter);
-    }
+    
     showCards.innerHTML = "";
     dataCard.forEach((cardArcadeMinor) =>{
         showCards.innerHTML += `
-        <div><img src="${cardArcadeMinor.img}"></div>`
-    });
-});
-
-
-
- /*function filtrar (data,propiedad){
-    return data.filter(tarotCards => {
-        return tarotCards.type === propiedad
+        <div><img src="${cardArcadeMinor.img}"></div>`}
+  )} else if (optionSelected === "Arcade major"){
+        dataCard = arcadeMajorFilter;
+        console.log(arcadeMajorFilter);
+        showCards.innerHTML = "";
+    dataCard.forEach((cardArcadeMajor) =>{
+        showCards.innerHTML += `
+        <div><img src="${cardArcadeMajor.img}"></div>`
+    })
+  } else if (optionSelected === "Lower number"){
+    dataCard = sortBy(cards);
+    showCards.innerHTML = "";
+    dataCard.forEach((lowerCardNumber) =>{
+        showCards.innerHTML += `
+        <div><img src="${lowerCardNumber.img}"></div>`
+    })
+} else if (optionSelected === "Higher number"){
+    dataCard = sortBy(cards).reverse();
+    showCards.innerHTML = "";
+    dataCard.forEach((lowerCardNumber) =>{
+        showCards.innerHTML += `
+        <div><img src="${lowerCardNumber.img}"></div>`
+    })
+  }else{
+        cards.forEach((imageCards) => {
+            showCards.innerHTML += `
+            <div><img src="${imageCards.img}"></div>`
         })
-      }
-      
-      
-      console.log(filtrar(cards,"minor"));
-      console.log(filtrar(cards,"major"));
-      */
+    }
+});
