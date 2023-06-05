@@ -1,23 +1,27 @@
-import { example, anotherExample } from '../src/data.js';
+import {sortBy} from '../src/data.js';
 
+describe ('ordenar ascendente', () =>{
+  it ('traer data ordanda por valor', () =>{
+    const cartasDesordenadas =[
+      {value:3},
+      {value:1},
+      {value:2},
+    ];
+    const cartasOrdenadas = sortBy(cartasDesordenadas)
+    expect (cartasOrdenadas).toEqual([
+      {value:1},
+      {value:2},
+      {value:3},
+    ]);
+  }
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+  )
+}
+)
+/*describe('arcadeMinorFilter', () => {
+  it('filter selected return minor cards', () => {
+    expect(arcadeMinorFilter).toHaveProperty('type', 'object');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
 });
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
+*/
