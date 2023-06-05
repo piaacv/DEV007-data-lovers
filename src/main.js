@@ -10,7 +10,7 @@ console.log(cards)
 
 cards.forEach((imageCards) => {
     showCards.innerHTML += `
-    <div><img src="${imageCards.img}"></div>`
+    <div class="showallimagenes"><img src="${imageCards.img}"></div>`
 })
 
 
@@ -24,33 +24,33 @@ cards.forEach((imageCards) => {
     showCards.innerHTML = "";
     dataCard.forEach((cardArcadeMinor) =>{
         showCards.innerHTML += `
-        <div><img src="${cardArcadeMinor.img}"></div>`}
+        <div class="showallimagenes"><img src="${cardArcadeMinor.img}"></div>`}
   )} else if (optionSelected === "Arcade major"){
         dataCard = arcadeMajorFilter;
         console.log(arcadeMajorFilter);
         showCards.innerHTML = "";
     dataCard.forEach((cardArcadeMajor) =>{
         showCards.innerHTML += `
-        <div><img src="${cardArcadeMajor.img}"></div>`
+        <div class="showallimagenes"><img src="${cardArcadeMajor.img}"></div>`
     })
   } else if (optionSelected === "Lower number"){
     dataCard = sortBy(cards);
     showCards.innerHTML = "";
     dataCard.forEach((lowerCardNumber) =>{
         showCards.innerHTML += `
-        <div><img src="${lowerCardNumber.img}"></div>`
+        <div class="showallimagenes"><img src="${lowerCardNumber.img}"></div>`
     })
 } else if (optionSelected === "Higher number"){
     dataCard = sortBy(cards).reverse();
     showCards.innerHTML = "";
     dataCard.forEach((lowerCardNumber) =>{
         showCards.innerHTML += `
-        <div><img src="${lowerCardNumber.img}"></div>`
+        <div class="showallimagenes"><img src="${lowerCardNumber.img}"></div>`
     })
   }else{
         cards.forEach((imageCards) => {
             showCards.innerHTML += `
-            <div><img src="${imageCards.img}"></div>`
+            <div class="showallimagenes"><img src="${imageCards.img}"></div>`
         })
     }
 });
