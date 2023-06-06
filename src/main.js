@@ -18,8 +18,6 @@ filterButtonSelection.addEventListener ("change", () =>{
   let dataCard;
   if (optionSelected === "Arcade minor"){
     dataCard = arcadeMinorFilter;
-
-    
     showCards.innerHTML = "";
     dataCard.forEach((cardArcadeMinor) =>{
       showCards.innerHTML += `
