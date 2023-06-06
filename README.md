@@ -21,7 +21,7 @@ Gracias a nuestra investigación y recopilación de información a través de la
 
 ### Prototipo de baja fidelidad
 [Diseño baja fidelidad] (/images/prototipo de baja fidelidad.png)
-<img src="images/prototipo de baja fidelidad.png">
+<img src="src/images/prototipo de baja fidelidad.png">
 
 ### Prototipo de alta fidelidad
  ([link de figma](https://www.figma.com/file/DG5jPiNKBehSIlF5eYkvn2/Untitled?type=whiteboard&node-id=2%3A54&t=Dcms1IV5IVysu6pJ-1))
