@@ -20,7 +20,7 @@ Criterios de aceptación: Usuario podrá seleccionar orden y ver las cartas seg�
 Gracias a nuestra investigación y recopilación de información a través de las historias de usuario, hemos podido crear un par de diseños que consideramos cumplen con las necesidades de nuestros usuarios y así mismo logran mantener un diseño intuitivo
 
 ### Prototipo de baja fidelidad
-![diseño baja fidelidad](.../images/prototipo de baja fidelidad.png)
+[Diseño baja fidelidad] (/images/prototipo de baja fidelidad.png)
 
 ### Prototipo de alta fidelidad
  ([link de figma](https://www.figma.com/file/DG5jPiNKBehSIlF5eYkvn2/Untitled?type=whiteboard&node-id=2%3A54&t=Dcms1IV5IVysu6pJ-1))
