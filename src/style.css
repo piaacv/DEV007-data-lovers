@@ -124,13 +124,10 @@ justify-content: center;
 .blog{
     color: whitesmoke;
     display: flex;
-    width: flex;
-    margin: auto;
     align-items: center;
     justify-content: center;
-    min-height:auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
+
+
 }
 .blog img{
     max-width: 280px;
@@ -150,10 +147,13 @@ justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 20px;
     box-sizing: content-box;
+    height: 450px;
+    
 }
 
 .descriptionContentCard{
     margin:20px;
+    height: 100px;
 
 }
 
@@ -183,8 +183,14 @@ justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:xx-large;
     text-align:end;
-    padding-top: 110px;
-    padding-right: 30px;
+    margin-top: 10%;
+    margin-left: 75%;
+}
+
+a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 .main_galleryconjunto{
     text-align: center;
