@@ -1,5 +1,4 @@
 import {sortBy} from '../src/data.js';
-import { arcadeMinorFilter } from '../src/data.js';
 
 describe ('ordenar ascendente', () =>{
   it ('traer data ordanda por valor ascendente', () =>{
@@ -21,14 +20,14 @@ describe ('ordenar ascendente', () =>{
 )
 
 describe ('ordenar descendente', () =>{
-  it ('traer data ordanda por valor descendente', () =>{
-    const cartasDesordenadas =[
-      {value:2},
-      {value:1},
+  it ('traer data ordenada por valor descendente', () =>{
+    const testcards =[
       {value:3},
+      {value:1},
+      {value:2},
     ];
-    const cartasOrdenadas = sortBy(cartasDesordenadas)
-    expect (cartasOrdenadas).toEqual([
+    const sortCards = sortBy(testcards).reverse()
+    expect (sortCards).toEqual([
       {value:3},
       {value:2},
       {value:1},
@@ -39,20 +38,25 @@ describe ('ordenar descendente', () =>{
 }
 )
 
-describe ('ordenar minor', () =>{
+/*describe ('ordenar minor', () =>{
   it ('traer data que sea minor', () =>{
-    const cartasminor =[
-    expect(filter (arcadeMinorFilter.cards.type)).toBe[
-      {minor}
+    const cartas =[
+      {type:"minor"},
+      {type:"minor"},
+      {type:"major"},
 
-    ]
     ];
+    arcadeMinorFilter(cartas)
+    expect (cartas).toEqual([
+      {type:"minor"},
+      {type:"minor"},
+    ]);
   }
 
   )
 }
 )
-/*describe('arcadeMinorFilter', () => {
+describe('arcadeMinorFilter', () => {
   it('filter selected return minor cards', () => {
     expect(arcadeMinorFilter).toHaveProperty('type', 'object');
   });

@@ -6,51 +6,49 @@ const showCards = document.getElementById("showAllCards");
 const cards= tarot.cards;
 const filterButtonSelection = document.getElementById("filterbutton");
 
-console.log(cards)
 
 cards.forEach((imageCards) => {
-    showCards.innerHTML += `
+  showCards.innerHTML += `
     <div class="showallimagenes"><img src="${imageCards.img}"></div>`
 })
 
 
-  filterButtonSelection.addEventListener ("change", () =>{
-    const optionSelected = filterButtonSelection.value;
-    let dataCard;
-    if (optionSelected === "Arcade minor"){
-        dataCard = arcadeMinorFilter;
-        console.log(arcadeMinorFilter);
+filterButtonSelection.addEventListener ("change", () =>{
+  const optionSelected = filterButtonSelection.value;
+  let dataCard;
+  if (optionSelected === "Arcade minor"){
+    dataCard = arcadeMinorFilter;
+
     
     showCards.innerHTML = "";
     dataCard.forEach((cardArcadeMinor) =>{
-        showCards.innerHTML += `
+      showCards.innerHTML += `
         <div class="showallimagenes"><img src="${cardArcadeMinor.img}"></div>`}
-  )} else if (optionSelected === "Arcade major"){
-        dataCard = arcadeMajorFilter;
-        console.log(arcadeMajorFilter);
-        showCards.innerHTML = "";
+    )} else if (optionSelected === "Arcade major"){
+    dataCard = arcadeMajorFilter;
+    showCards.innerHTML = "";
     dataCard.forEach((cardArcadeMajor) =>{
-        showCards.innerHTML += `
+      showCards.innerHTML += `
         <div class="showallimagenes"><img src="${cardArcadeMajor.img}"></div>`
     })
   } else if (optionSelected === "Lower number"){
     dataCard = sortBy(cards);
     showCards.innerHTML = "";
     dataCard.forEach((lowerCardNumber) =>{
-        showCards.innerHTML += `
+      showCards.innerHTML += `
         <div class="showallimagenes"><img src="${lowerCardNumber.img}"></div>`
     })
-} else if (optionSelected === "Higher number"){
+  } else if (optionSelected === "Higher number"){
     dataCard = sortBy(cards).reverse();
     showCards.innerHTML = "";
     dataCard.forEach((lowerCardNumber) =>{
-        showCards.innerHTML += `
+      showCards.innerHTML += `
         <div class="showallimagenes"><img src="${lowerCardNumber.img}"></div>`
     })
   }else{
-        cards.forEach((imageCards) => {
-            showCards.innerHTML += `
+    cards.forEach((imageCards) => {
+      showCards.innerHTML += `
             <div class="showallimagenes"><img src="${imageCards.img}"></div>`
-        })
-    }
+    })
+  }
 });
