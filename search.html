@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Cards</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" rel="noopener ">
+    <img src="images/tarotlogo.png" class="tarot" width="50px" height="50px"></a> 
+    <ul > 
+
+      <a href="index.html" rel="noopener "><button class="header_buttons">Home </button></a> 
+        <a href="search.html" rel="noopener "><button class="header_buttons"> Gallery </button></a>
+          <a href="https://www.trustedtarot.com/es/tarot-gratis/" rel="noopener "><button class="header_buttons"> lecture </button></a>
+  </ul>
+
+
+  <form>
+
+      <input type="search" class="header_search" placeholder="Search card">
+      <input type="submit" class="header_search_go" value="Go!">
+
+  </form>
+  </header>
+
+
+<main>
+  <div class="banner">
+    <div class="imageBanner">
+      <div class="main_filtrodrop">
+        <select class="main_filtro" id="filterbutton">
+      <ul class="main_filtrocontenido">
+        <option>Filter By</option>
+        <option id="filterButtonOption1" value="Arcade minor">Arcade minor</option>
+        <option id="filterButtonOption2" value="Arcade major">Arcade major</option>
+        <option id="filterButtonOption3" value="Lower number">Lower number</option>
+        <option id="filterButtonOption4" value="Higher number">Higher number</option>
+    </ul>
+  </select>
+  </div>
+  </div>
+  </div>  
+
+  <div class="sectionLogo">
+    <img src="images/tarotlogo.png"  class= "main_logo" width="50px" height="50px">
+  </div>
+
+  <div id="showAllCards"></div>
+  <script type="module" src="main.js"></script>
+</main>
+
+<footer><p>Copyright 2023©</p></footer>
+</body>
+
+</html>
