@@ -20,10 +20,11 @@ Criterios de aceptación: Usuario podrá seleccionar orden y ver las cartas seg�
 Gracias a nuestra investigación y recopilación de información a través de las historias de usuario, hemos podido crear un par de diseños que consideramos cumplen con las necesidades de nuestros usuarios y así mismo logran mantener un diseño intuitivo
 
 ### Prototipo de baja fidelidad
-![pantalla validadora](../images/prototipo de baja fidelidad.png)
+![pantalla validadora](src/images/prototipo-de-baja-fidelidad.png)
 ### Prototipo de alta fidelidad
- ([link de figma](https://www.figma.com/file/DG5jPiNKBehSIlF5eYkvn2/Untitled?type=whiteboard&node-id=2%3A54&t=Dcms1IV5IVysu6pJ-1))
+Puedes revisar el diseño de nuestro propotipo de alta fidelidad entrando al link de Figma.
+ ([Diseño en Figma](https://www.figma.com/file/DG5jPiNKBehSIlF5eYkvn2/Untitled?type=whiteboard&node-id=2%3A54&t=Dcms1IV5IVysu6pJ-1))
 
 ## 4. Pruebas unitarias
 Definimos tres pruebas unitarias correspondientes a que nuestras funciones tanto de orden como de filtrado se apliquen correctamente. A continuación, en la imagen se ven los resultados de las pruebas
-(cargar img y llamarla)
+![Resultados pruebas unitarias](src/images/pruebas-unitarias.png)
